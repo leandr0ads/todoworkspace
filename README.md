@@ -9,12 +9,14 @@ A solução contempla:
 - ✅ Testes unitários
 - ✅ Suporte a notificações (SignalR Hub preparado)
 
+---
 ## 🧱 Estrutura do Projeto
 
 todoworkspace/
-├─ todo-backend/   → API .NET 8 + EF Core
-├─ todo-webapp/    → Angular SPA
-└─ README.md       
+├─ todo-backend/ → API .NET 8 + Entity Framework Core
+├─ todo-webapp/ → SPA Angular
+└─ README.md → (este arquivo)
+
 
 ---
 
