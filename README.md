@@ -47,3 +47,32 @@ todoworkspace/
 ├─ todo-backend/   # API .NET 8 (Clean Architecture, EF Core, SQL Server)
 ├─ todo-webapp/    # Aplicação Angular (Standalone Components, Signals)
 └─ README.md       # Documentação principal
+```
+
+## ▶️ Como Executar
+### 🧰 Backend (.NET API)
+```bash
+cd todo-backend
+dotnet restore
+dotnet ef database update
+dotnet run
+
+Testes Unitários
+cd todo-backend/Todo.Tests
+dotnet test
+```
+
+### 💻 Frontend (Angular)
+```bash
+cd todo-webapp
+npm install
+ng serve --open
+```
+
+### 📦 Requisitos 
+```bash
+.NET 8 SDK
+Node.js 18+
+Angular CLI
+SQL Server LocalDB
+```
