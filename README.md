@@ -12,9 +12,8 @@ A solução contempla:
 ## 🧱 Estrutura do Projeto
 
 todoworkspace/
-todo-backend/ - API .NET 8 + Entity Framework Core
-todo-webapp/ - SPA Angular
-
+todo-backend/ >> API .NET 8 + Entity Framework Core <<
+todo-webapp/  >> SPA Angular <<
 
 ---
 
