@@ -1,0 +1,15 @@
+C:\leandro\Estudos\Csharp\todoworkspace\todo-backend\Todo.Application\bin\Debug\net9.0\Todo.Application.deps.json
+C:\leandro\Estudos\Csharp\todoworkspace\todo-backend\Todo.Application\bin\Debug\net9.0\Todo.Application.dll
+C:\leandro\Estudos\Csharp\todoworkspace\todo-backend\Todo.Application\bin\Debug\net9.0\Todo.Application.pdb
+C:\leandro\Estudos\Csharp\todoworkspace\todo-backend\Todo.Application\bin\Debug\net9.0\Todo.Domain.dll
+C:\leandro\Estudos\Csharp\todoworkspace\todo-backend\Todo.Application\bin\Debug\net9.0\Todo.Domain.pdb
+C:\leandro\Estudos\Csharp\todoworkspace\todo-backend\Todo.Application\obj\Debug\net9.0\Todo.Application.csproj.AssemblyReference.cache
+C:\leandro\Estudos\Csharp\todoworkspace\todo-backend\Todo.Application\obj\Debug\net9.0\Todo.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\leandro\Estudos\Csharp\todoworkspace\todo-backend\Todo.Application\obj\Debug\net9.0\Todo.Application.AssemblyInfoInputs.cache
+C:\leandro\Estudos\Csharp\todoworkspace\todo-backend\Todo.Application\obj\Debug\net9.0\Todo.Application.AssemblyInfo.cs
+C:\leandro\Estudos\Csharp\todoworkspace\todo-backend\Todo.Application\obj\Debug\net9.0\Todo.Application.csproj.CoreCompileInputs.cache
+C:\leandro\Estudos\Csharp\todoworkspace\todo-backend\Todo.Application\obj\Debug\net9.0\Todo.App.468A55F7.Up2Date
+C:\leandro\Estudos\Csharp\todoworkspace\todo-backend\Todo.Application\obj\Debug\net9.0\Todo.Application.dll
+C:\leandro\Estudos\Csharp\todoworkspace\todo-backend\Todo.Application\obj\Debug\net9.0\refint\Todo.Application.dll
+C:\leandro\Estudos\Csharp\todoworkspace\todo-backend\Todo.Application\obj\Debug\net9.0\Todo.Application.pdb
+C:\leandro\Estudos\Csharp\todoworkspace\todo-backend\Todo.Application\obj\Debug\net9.0\ref\Todo.Application.dll

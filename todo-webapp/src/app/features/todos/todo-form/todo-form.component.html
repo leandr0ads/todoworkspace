@@ -1,0 +1,13 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <input formControlName="title" placeholder="Título" required />
+
+  <textarea formControlName="description" placeholder="Descrição"></textarea>
+
+  <input type="date" formControlName="dueDate" />
+
+  <div ngIf="form.controls['dueDate'].errors?.['invalidDate']">
+    <small style="color:red">Data inválida</small>
+  </div>
+
+  <button type="submit" [disabled]="form.invalid">Adicionar</button>
+</form>

@@ -1,0 +1,88 @@
+<h2>Tarefas</h2>
+
+<div class="actions">
+  <button class="add-btn" (click)="openAdd()">+ Adicionar</button>
+
+<button *ngIf="selectedCount() > 1"
+        class="delete-many-btn"
+        (click)="openConfirmBulkDelete()">
+  Excluir Selecionados ({{ selectedCount() }})
+</button>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th><input type="checkbox"
+               [checked]="selectAllChecked()"
+               (change)="toggleSelectAll($event.target.checked)" /></th>
+      <th>Título</th>
+      <th>Status</th>
+      <th>Criado em</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let t of todos()">
+      <td><input type="checkbox"
+       [checked]="selectedSet().has(t.id)"
+       (change)="toggleSelect(t.id, $event.target.checked)"></td>
+
+      <td>{{ t.title }}</td>
+      <td>{{ t.isCompleted | status }}</td>
+      <td>{{ t.createdAt | date:'dd/MM/yyyy' }}</td>
+
+      <td>
+        <button class="btn view-btn" (click)="seeDetails(t)">Ver</button>
+        <button class="btn action-btn" (click)="toggle(t)">
+          {{ t.isCompleted ? 'Reabrir' : 'Concluir' }}
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="modal" *ngIf="selected()">
+  <div class="modal-box">
+    <h3>Detalhes</h3>
+
+    <p><b>Título:</b> {{ selected()?.title }}</p>
+    <p><b>Descrição:</b> {{ selected()?.description }}</p>
+    <p><b>Data:</b> {{ selected()?.dueDate | date:'dd/MM/yyyy' }}</p>
+    <p><b>Status:</b> {{ selected()?.isCompleted! | status }}</p>
+
+    <button (click)="confirmDelete()">Excluir</button>
+    <button (click)="closeModals()">Fechar</button>
+  </div>
+</div>
+
+<div class="modal" *ngIf="showConfirmDelete()">
+  <div class="modal-box">
+    <h3>Tem certeza?</h3>
+    <button (click)="deleteSelected()">Sim</button>
+    <button (click)="closeModals()">Não</button>
+  </div>
+</div>
+
+<div class="modal" *ngIf="showAddModal()">
+  <div class="modal-box">
+    <h3>Criar nova tarefa</h3>
+    <app-todo-form (saved)="create($event)"></app-todo-form>
+    <button (click)="closeModals()">Cancelar</button>
+  </div>
+</div>
+
+<div class="modal" *ngIf="showConfirmBulkDelete()">
+  <div class="modal-box">
+    <h3>Tem certeza?</h3>
+    <p>Você está prestes a deletar <b>{{ selectedCount() }}</b> tarefas.</p>
+    <p>Essa ação não pode ser desfeita.</p>
+
+    <div class="modal-actions">
+      <button (click)="deleteSelectedBulkConfirmed()">Sim, deletar</button>
+      <button (click)="closeModals()">Cancelar</button>
+    </div>
+  </div>
+</div>
+<app-toasts></app-toasts>
