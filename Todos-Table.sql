@@ -1,12 +1,3 @@
-USE [TodoDb]
-GO
-
-ALTER TABLE [dbo].[Todos] DROP CONSTRAINT [DF__Todos__CreatedAt__276EDEB3]
-GO
-
-ALTER TABLE [dbo].[Todos] DROP CONSTRAINT [DF__Todos__IsComplet__267ABA7A]
-GO
-
 /****** Object:  Table [dbo].[Todos]    Script Date: 03/11/2025 07:51:21 ******/
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Todos]') AND type in (N'U'))
 DROP TABLE [dbo].[Todos]
@@ -39,5 +30,6 @@ GO
 
 ALTER TABLE [dbo].[Todos] ADD  DEFAULT (getutcdate()) FOR [CreatedAt]
 GO
+
 
 
