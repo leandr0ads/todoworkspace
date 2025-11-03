@@ -50,7 +50,6 @@ export class TodoListComponent implements OnInit {
   const s = new Set<string>();
 
   if (checked) {
-    // seleciona todos os ids visíveis
     this.todos().forEach(t => s.add(t.id));
   }
 
