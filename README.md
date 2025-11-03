@@ -47,12 +47,3 @@ todoworkspace/
 ├─ todo-backend/   # API .NET 8 (Clean Architecture, EF Core, SQL Server)
 ├─ todo-webapp/    # Aplicação Angular (Standalone Components, Signals)
 └─ README.md       # Documentação principal
-
-🧪 Executar Testes
-cd todo-backend/Todo.Tests
-dotnet test
-
-💻 Frontend (Angular)
-cd todo-webapp
-npm install
-ng serve --open
