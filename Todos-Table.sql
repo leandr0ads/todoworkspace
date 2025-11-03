@@ -1,9 +1,4 @@
 /****** Object:  Table [dbo].[Todos]    Script Date: 03/11/2025 07:51:21 ******/
-IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Todos]') AND type in (N'U'))
-DROP TABLE [dbo].[Todos]
-GO
-
-/****** Object:  Table [dbo].[Todos]    Script Date: 03/11/2025 07:51:21 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -30,6 +25,7 @@ GO
 
 ALTER TABLE [dbo].[Todos] ADD  DEFAULT (getutcdate()) FOR [CreatedAt]
 GO
+
 
 
 
