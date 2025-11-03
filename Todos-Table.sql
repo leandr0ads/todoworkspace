@@ -1,8 +1,10 @@
-/****** Object:  Table [dbo].[Todos]    Script Date: 03/11/2025 07:51:21 ******/
-SET ANSI_NULLS ON
+IF NOT EXISTS(SELECT * FROM sys.databases WHERE name = 'TodoDb')
+BEGIN
+    CREATE DATABASE TodoDb;
+END
 GO
 
-SET QUOTED_IDENTIFIER ON
+USE TodoDb;
 GO
 
 CREATE TABLE [dbo].[Todos](
@@ -25,7 +27,5 @@ GO
 
 ALTER TABLE [dbo].[Todos] ADD  DEFAULT (getutcdate()) FOR [CreatedAt]
 GO
-
-
 
 
